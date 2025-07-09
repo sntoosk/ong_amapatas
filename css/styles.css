@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  background-image: url("../assets/fundo.jpg");
+  background-repeat: repeat;
+  background-size: 150px;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* filtro branco translúcido */
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.login-card {
+  position: relative;
+  background-color: #e82138;
+  color: white;
+  border-radius: 30px;
+  padding: 60px 30px 70px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-card h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.login-card p {
+  font-size: 14px;
+  margin: 10px 0 30px;
+}
+
+.login-card button {
+  width: 80%;
+  height: 54px;
+  font-size: 16px;
+  background-color: white;
+  color: #e82138;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cat {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  z-index: 3;
+}
+
+.pet-left,
+.pet-right {
+  position: absolute;
+  bottom: -30px;
+  width: 200px;
+  z-index: 4;
+}
+
+.pet-left {
+  left: -50px;
+}
+
+.pet-right {
+  right: -50px;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 90%;
+    padding: 50px 20px 60px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .cat {
+    width: 60px;
+    top: -30px;
+  }
+
+  .pet-left,
+  .pet-right {
+    width: 120px;
+    bottom: -20px;
+  }
+
+  .pet-left {
+    left: -20px;
+  }
+
+  .pet-right {
+    right: -20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input {
+  width: 80%;
+  height: 40px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #999;
+}
+
+form button {
+  width: 80%;
+  height: 44px;
+  background-color: white;
+  color: #e82138;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
