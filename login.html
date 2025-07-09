@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amo Patas - Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo Amo Patas" class="logo" />
+
+      <div class="login-card">
+        <h2>Olá Usuário!</h2>
+        <form
+          onsubmit="event.preventDefault(); window.location.href='home.html';"
+        >
+          <input type="text" placeholder="Usuário" required />
+          <input type="password" placeholder="Senha" required />
+
+          <a
+            onclick="window.location.href='esqueceu.html'"
+            class="link"
+            style="cursor: pointer"
+          >
+            Esqueceu a senha?
+          </a>
+
+          <button type="submit">Logar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,47 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema login</title>
-    <link rel="stylesheet" href="css/adm.css">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amo Patas - Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo Amo Patas" class="logo" />
 
-    
+      <div class="login-card">
+        <img src="assets/gato-cima.png" alt="Gato" class="cat" />
 
-</head>
-<body style="background-image: url(img/fundo.webp) ;width:1180px;height:70% ;">
+        <h2>Olá!</h2>
 
-    <nav class="navbar">
-  <ul class="nav-links" id="navLinks">
-    <li><a href="husu.html">Animais</a></li>
-    <li><a href="Hprod.html">Sobre Nós</a></li>
-    <li><a href="agendamento.html">Agendamento</a></li>
-  </ul>
+        <p>
+          Faça o login se tiver conta, se não
+          <span
+            onclick="window.location.href='cadastro.html'"
+            style="color: #fff; text-decoration: underline; cursor: pointer"
+          >
+            cadastre
+          </span>
+        </p>
 
-  <div class="user-menu-container">
-    <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="Usuário" class="user-icon" id="userIcon">
-    <div class="dropdown-menu" id="dropdownMenu">
-      <a href="index.html">Sair</a>
+        <button onclick="window.location.href='login.html'">Login</button>
+
+        <img
+          src="assets/cachorro-esquerda.png"
+          alt="Cachorro Esquerda"
+          class="pet-left"
+        />
+        <img
+          src="assets/cachorro-direita.png"
+          alt="Cachorro Direita"
+          class="pet-right"
+        />
+      </div>
     </div>
-  </div>
-</nav>
-    <img src="img/images-removebg-preview.png"style="width: 40vh;margin-left: 83vh">
-     
-      <div class="login-box">
-        <h2>Login</h2>
-     <form >
-     <label >Usuário:</label><br>
-     <input type="text" id="user" required><br><br>
-     <label >Senha:</label><br>
-     <input type="password" id="pass" required><br><br>
-      <button type="button" onclick="login(event)">entrar</button><br>
-      <a href="Usuario.html"  style="color: white; text-decoration: underline;">se não tem cadastro</a>
-     </form><br>
-    </div><br>
-     <img src="img/68870429_1281785041983624_7988213492056326144_n.png" style="margin-top: -180vh;margin-left: 40vh;" ><img src="img/viralata.png" style="margin-left: 140vh;margin-top: -45vh;">
-    <footer>
-    &copy; 2025 Sistema ADM - Todos os direitos reservados.
-  </footer>
-    <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
